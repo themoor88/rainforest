@@ -1,4 +1,4 @@
 <% @products.each do |prod| %>
-  <h2> <%= prod.name %></h2>
+  <a href = "<%= product_path(prod) %>" <h2> <%= prod.name.capitalize %>, <%= prod.description %>, <%= prod.formatted_price %></h2></a>
   <hr/>
 <% end %>
