@@ -1,7 +1,7 @@
 <h1> <%= action_name.capitalize %> Product </h1>
 
 
-<%= form_for(@product) do |f| %>
+<%= form_for @product do |f| %>
 
   <% if @product.errors.any? %>
     <div id = "error_explanation">

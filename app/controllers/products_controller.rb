@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
     render :form
+    # Instead of using partials just use an entire template called form.html.erb
   end
 
   def edit
