@@ -2,3 +2,8 @@
   <a href = "<%= product_path(prod) %>" <h2> <%= prod.name.capitalize %>, <%= prod.description %>, <%= prod.formatted_price %></h2></a>
   <hr/>
 <% end %>
+
+<%= form_tag products_path, method: :get, authentication: false, id: 'search-form' do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search" %>
+<%end%>

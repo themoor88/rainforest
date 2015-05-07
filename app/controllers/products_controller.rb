@@ -14,13 +14,13 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
-    render :form
+    # render :form
     # Instead of using partials just use an entire template called form.html.erb
   end
 
   def edit
     @product = Product.find(params[:id])
-    render :form
+    # render :form
   end
 
   def create
